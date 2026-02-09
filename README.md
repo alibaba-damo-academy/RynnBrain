@@ -1,6 +1,9 @@
 # RynnBrain
 <p align="center">
-<img src="./cookbooks/assets/logo.png" style="width: 40%; height: auto;">
+<img src="./cookbooks/assets/logo.png" style="width: 50%; height: auto;">
+</p>
+<p align="center">
+        💫 <a href="https://alibaba-damo-academy.github.io/RynnBrain.github.io/"><b>Project Page</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Alibaba-DAMO-Academy/rynnbrain">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/collections/DAMO_Academy/RynnBrain">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp📚 <a href="https://github.com/alibaba-damo-academy/RynnBrain/tree/main/cookbooks">Cookbooks</a>&nbsp&nbsp
 </p>
 
 ## Introduction
@@ -9,22 +12,23 @@ The goal of RynnBrain is not just to "observe" the environment, but to anchor it
 This systematic upgrade pushes the boundaries of embodied brains, moving them from passive observation toward active, physics-aware reasoning and complex task execution.
 
 Rynnbrain is available in two dense variants (2B and 8B) and one mixture-of-experts (MoE) model (30B-A3B). 
-In addition, we release three post‑trained models: RynnBrain‑Plan, RynnBrain‑Nav, and RynnBrain‑Cot. RynnBrain‑Plan demonstrates the effectiveness of the fine‑grained manipulation‑planning paradigm that alternates between textual reasoning and localization.
-RynnBrain‑Nav verifies that using RynnBrain as the foundation model can substantially enhance the performance ceiling of various embodied task models. 
-Brain-cot incorporates an interleaved reasoning mechanism that alternates between textual reasoning and spatial grounding, endowing it with physical-space reasoning capabilities. 
+In addition, we release three post‑trained models: RynnBrain‑Plan, RynnBrain‑Nav, and RynnBrain‑CoP. 
+<!-- RynnBrain‑Plan demonstrates the effectiveness of the fine‑grained manipulation‑planning paradigm that alternates between textual reasoning and localization. -->
+<!-- RynnBrain‑Nav verifies that using RynnBrain as the foundation model can substantially enhance the performance ceiling of various embodied task models.  -->
+<!-- Brain-cot incorporates an interleaved reasoning mechanism that alternates between textual reasoning and spatial grounding, endowing it with physical-space reasoning capabilities.  -->
 
 ### 🌟 Key Highlights
 * **Comprehensive egocentric understanding**: 
-RynnBrain excels in spatial comprehension and egocentric cognition, encompassing tasks such as embodied QA, egocentric counting, and OCR, while further broadening the scope of embodied brains with its fine-grained video understanding capabilities.
+Excels in spatial comprehension and egocentric cognition, including tasks such as embodied QA, egocentric counting, and OCR.
 * **Diverse spatiotemporal localization**: 
-RynnBrain possesses powerful physical-space localization capabilities, enabling it to locate objects, identify target areas, and predict trajectories across its entire episodic memory, thereby endowing robots with global spatial awareness and fine-grained video understanding.
+Possesses powerful physical-space localization capabilities, enabling it to locate objects, identify target areas, and predict trajectories across its entire episodic memory.
 * **Physical-space reasoning**: 
-Departing from conventional purely textual reasoning paradigms, RynnBrain employs an interleaved reasoning strategy that alternates between textual and spatial grounding, ensuring that its reasoning processes are firmly rooted in the physical environment.
+Employs an interleaved reasoning strategy that alternates between textual and spatial grounding, ensuring that its reasoning processes are firmly rooted in the physical environment.
 * **Physics-aware precise planning**: 
-By integrating localized information of affordances, areas, and objects directly into the planning process, RynnBrain provides downstream VLA models with precise instructions, enabling the hierarchical RynnBrain-VLA architecture to effectively execute highly intricate and fine-grained tasks.
+Integrates localized affordances and object information into planning, enabling downstream VLA models to execute intricate tasks with precise instructions.
 
 <p align="center">
-<img src="./cookbooks/assets/intro.png" style="width: 100%; height: auto;">
+<img src="./cookbooks/assets/intro.png" style="width: 90%; height: auto;">
 </p>
 
 ### Model Architecture
@@ -32,31 +36,31 @@ RynnBrain employs a unified encoder-decoder architecture (supporting both Dense 
 By systematically training on rich spatiotemporal, physical-space, and general knowledge data, RynnBrain maintains robust general-purpose capabilities while specializing in diverse, fine-grained embodied reasoning and complex planning tasks.
 
 <p align="center">
-<img src="./cookbooks/assets/framework.png" style="width: 80%; height: auto;">
+<img src="./cookbooks/assets/framework.png" style="width: 90%; height: auto;">
 </p>
 
 ## Performance
 
 - General Embodied Understanding
-<p align="center">
-<img src="./cookbooks/assets/performance_general_2B_8B.png" style="width: 100%; height: auto;">
-</p>
 
 <p align="center">
-<img src="./cookbooks/assets/performance_general_30B.png" style="width: 100%; height: auto;">
+<img src="./cookbooks/assets/performance_general_2B_8B.png" style="width: 80%; height: auto;">
+</p>
+<p align="center">
+<img src="./cookbooks/assets/performance_general_30B.png" style="width: 80%; height: auto;">
 </p>
 
 
 - Manipulate Planning
 
 <p align="center">
-<img src="./cookbooks/assets/task_planning/performance.jpg" style="width: 100%; height: auto;">
+<img src="./cookbooks/assets/task_planning/performance.jpg" style="width: 80%; height: auto;">
 </p>
 
 - Navigation
 
 <p align="center">
-<img src="./cookbooks/assets/navigation/performance.png" style="width: 100%; height: auto;">
+<img src="./cookbooks/assets/navigation/performance.png" style="width: 80%; height: auto;">
 </p>
 
 
@@ -113,7 +117,7 @@ Checkout the [cookbooks](./cookbooks) that showcase RynnBrain's capabilities in 
 
 **Pretraining & Evaluation** 
 
-...
+Please refer to [RynnScale](https://github.com/alibaba-damo-academy/RynnScale) for details of pretraining and evaluation.
 
 
 **Finetuning**
@@ -132,7 +136,7 @@ into its planning outputs**. Consequently, even highly intricate and fine-graine
 ## RynnBrain-Bench
 We introduce **RynnBrain-Bench**, a high-dimensional benchmark for embodied understanding that evaluates models across four key dimensions: *object cognition*, *spatial cognition*, *grounding*, and *pointing*—highlighting fine-grained understanding and spatiotemporal localization across episodic video sequences.
 
-For details, please refer to [RynnBrain-Bench](./rynnbrain-bench/README_Bench.md).
+For details, please refer to [RynnBrain-Bench](./rynnbrain-bench/README.md).
 <p align="center">
 <img src="./cookbooks/assets/RynnBrain-Bench.png" style="width: 80%; height: auto;">
 </p>

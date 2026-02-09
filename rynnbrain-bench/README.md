@@ -115,7 +115,7 @@ RynnBrain-Bench
 ```
 
 ## Evaluation
-Please refer to [RynnScale](Please refer to [RynnScale](https://code.alibaba-inc.com/kehanli/RynnScale/tree/main/projects/rynn_brain#evaluation)
+Please refer to [RynnScale](https://github.com/alibaba-damo-academy/RynnScale#evaluation) for details.
 ```bash
 python -m rynn_scale.api.eval \
     --model_path $MODEL_PATH \
