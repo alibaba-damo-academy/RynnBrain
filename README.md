@@ -19,7 +19,7 @@ In addition, we release three post‑trained models: RynnBrain‑Plan, RynnBrain
 
 ### 🌟 Key Highlights
 * **Comprehensive egocentric understanding**: 
-Excels in spatial comprehension and egocentric cognition, including tasks such as embodied QA, egocentric counting, and OCR.
+Excels in spatial comprehension and egocentric cognition, encompassing tasks such as embodied QA, egocentric counting, and OCR.
 * **Diverse spatiotemporal localization**: 
 Possesses powerful physical-space localization capabilities, enabling it to locate objects, identify target areas, and predict trajectories across its entire episodic memory.
 * **Physical-space reasoning**: 
