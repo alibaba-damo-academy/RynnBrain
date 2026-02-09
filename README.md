@@ -142,3 +142,11 @@ For details, please refer to [RynnBrain-Bench](./rynnbrain-bench/README.md).
 </p>
 
 
+## Acknowledgement
+
+We would like to express our gratitude to the open-source community for their invaluable contributions and support.
+
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
