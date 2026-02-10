@@ -117,7 +117,7 @@ Checkout the [cookbooks](./cookbooks) that showcase RynnBrain's capabilities in 
 
 **Pretraining & Evaluation** 
 
-Please refer to [RynnScale](https://github.com/alibaba-damo-academy/RynnScale) for details of pretraining and evaluation.
+Please refer to [RynnScale](https://github.com/alibaba-damo-academy/RynnScale/tree/main/projects/rynn_brain) for details of pretraining and evaluation.
 
 
 **Finetuning**
