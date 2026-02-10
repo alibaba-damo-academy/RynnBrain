@@ -7,12 +7,8 @@
 </p>
 
 ## Introduction
-We present **RynnBrain**, an embodied foundation model grounded in physical reality. 
-The goal of RynnBrain is not just to "observe" the environment, but to anchor its understanding within the physical world through comprehensive egocentric cognition, precise spatio-temporal grounding and real task planning. 
-This systematic upgrade pushes the boundaries of embodied brains, moving them from passive observation toward active, physics-aware reasoning and complex task execution.
-
-Rynnbrain is available in two dense variants (2B and 8B) and one mixture-of-experts (MoE) model (30B-A3B). 
-In addition, we release three post‑trained models: RynnBrain‑Plan, RynnBrain‑Nav, and RynnBrain‑CoP. 
+We present **RynnBrain**, an embodied foundation model grounded in physical reality. Rynnbrain is available in two dense variants (2B and 8B) and one mixture-of-experts (MoE) model (30B-A3B). 
+In addition, we release three post‑trained models: RynnBrain‑Plan (**robot task planning**), RynnBrain‑Nav (**vision-language navigation**), and RynnBrain‑CoP (**chain-of-point reasoning**). 
 <!-- RynnBrain‑Plan demonstrates the effectiveness of the fine‑grained manipulation‑planning paradigm that alternates between textual reasoning and localization. -->
 <!-- RynnBrain‑Nav verifies that using RynnBrain as the foundation model can substantially enhance the performance ceiling of various embodied task models.  -->
 <!-- Brain-CoP incorporates an interleaved reasoning mechanism that alternates between textual reasoning and spatial grounding, endowing it with physical-space reasoning capabilities.  -->
@@ -25,15 +21,15 @@ Possesses powerful localization capabilities across episodic memory, enabling pr
 * **Physical-space reasoning**: 
 Employs an interleaved reasoning strategy that alternates between textual and spatial grounding, ensuring that its reasoning processes are firmly rooted in the physical environment.
 * **Physics-aware precise planning**: 
-Integrates localized affordances and object information into planning, enabling downstream VLA models to execute intricate tasks with fine-grained instructions.
+Integrates located affordances and object information into planning, enabling downstream VLA models to execute intricate tasks with fine-grained instructions.
 
 <p align="center">
 <img src="./cookbooks/assets/intro.png" style="width: 90%; height: auto;">
 </p>
 
 ### Model Architecture
-RynnBrain employs a unified encoder-decoder architecture (supporting both Dense and MoE variants) to transform omni-vision inputs and textual instructions into multi-modal outputs, including spatial trajectories, physical pointing, and action plans. 
-By systematically training on rich spatio-temporal, physical-space, and general knowledge data, RynnBrain maintains robust general-purpose capabilities while specializing in diverse, fine-grained embodied reasoning and complex planning tasks.
+RynnBrain employs a unified encoder-decoder architecture (supporting both Dense and MoE variants) to transform omni-vision inputs and textual instructions into multi-modal outputs, including spatial trajectories, physical pointing, and action planning. 
+Through massive training on rich spatio-temporal, physical-space, and general knowledge data, RynnBrain maintains robust general-purpose capabilities while specializing in diverse, fine-grained embodied reasoning and complex planning tasks.
 
 <p align="center">
 <img src="./cookbooks/assets/framework.png" style="width: 90%; height: auto;">
