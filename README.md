@@ -144,8 +144,7 @@ For details, please refer to [RynnBrain-Bench](./rynnbrain-bench/README.md).
 
 ## Acknowledgement
 
-We would like to express our gratitude to the open-source community for their invaluable contributions and support.
-
+Our RynnBrain is built on top of [**Qwen3-VL**](https://github.com/QwenLM/Qwen3-VL). We also learned a lot from the implementation of [**RynnEC**](https://github.com/alibaba-damo-academy/RynnEC) and [**VideoRefer**](https://github.com/DAMO-NLP-SG/VideoRefer). If your work is used in RynnBrain but not mentioned in either this repo or the technical report, feel free to let us know :heart:.
 
 ## License
 
