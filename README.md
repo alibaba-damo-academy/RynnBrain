@@ -47,17 +47,22 @@ Through massive training on rich spatio-temporal, physical-space, and general kn
 </p>
 
 
-- Manipulate Planning
+- Robot Task Planning
 
 <p align="center">
-<img src="https://alibaba-damo-academy.github.io/RynnBrain.github.io/assets/plan_results.png" style="width: 80%; height: auto;">
+<img src="https://github.com/user-attachments/assets/488da393-a828-4bd9-8813-ace6164a1d2c" style="width: 80%; height: auto;">
 </p>
 
-- Navigation
+
+
+
+- Vision-Language Navigation
 
 <p align="center">
-<img src="./cookbooks/assets/navigation/performance.png" style="width: 80%; height: auto;">
+<img src="https://github.com/user-attachments/assets/78c36b4e-0ea8-42e2-a3fd-692d7c2fb4a7" style="width: 80%; height: auto;">
 </p>
+
+
 
 
 
