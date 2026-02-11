@@ -39,7 +39,7 @@ RynnBrain employs a unified encoder-decoder architecture (supporting both Dense 
 Through massive training on rich spatio-temporal, physical-space, and general knowledge data, RynnBrain maintains robust general-purpose capabilities while specializing in diverse, fine-grained embodied reasoning and complex planning tasks.
 
 <p align="center">
-<img src="https://github.com/alibaba-damo-academy/RynnBrain.github.io/blob/main/assets/frame.png?raw=true" style="width: 90%; height: auto;">
+<img src="./cookbooks/assets/framework.png" style="width: 90%; height: auto;">
 </p>
 
 ## Performance
