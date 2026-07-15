@@ -39,8 +39,11 @@ def unload_all_models():
     
     loaded_models.clear()
     gc.collect()
-    
-    if TORCH_AVAILABLE and torch.cuda.is_available():
+
+    if TORCH_AVAILABLE and torch.xpu.is_available():
+        logging.info("Cleaning up XPU cache...")
+        torch.xpu.empty_cache()
+    elif TORCH_AVAILABLE and torch.cuda.is_available():
         logging.info("Cleaning up CUDA cache...")
         torch.cuda.empty_cache()
     

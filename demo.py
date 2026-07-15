@@ -11,12 +11,18 @@ FPS = 2
 MAX_FRAMES = 512
 MODEL_PATH = ""
 
+if torch.xpu.is_available():
+    DEVICE = "xpu:0"
+elif torch.cuda.is_available():
+    DEVICE = "cuda:0"
+else:
+    DEVICE = "cpu"
 
 model = AutoModelForImageTextToText.from_pretrained(
     MODEL_PATH,
     torch_dtype=torch.bfloat16,
-    device_map={"": "cuda:0"},
-    attn_implementation="flash_attention_2",
+    device_map={"": DEVICE},
+    attn_implementation="sdpa",
 )
 
 processor = AutoProcessor.from_pretrained(MODEL_PATH)

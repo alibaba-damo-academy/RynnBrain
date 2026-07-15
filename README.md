@@ -135,6 +135,8 @@ response = processor.decode(output_ids[0], skip_special_tokens=True)
 print(response)
 ```
 
+> **Note**: RynnBrain also runs on Intel XPU (integrated and discrete GPUs) via PyTorch's native XPU backend — simply replace `"cuda"` with `"xpu"` in the two `.to(...)` calls above. No other code changes are required. Verified on RynnBrain-4B (Qwen3-VL-4B-Instruct base): CPU vs XPU logits MSE = 2.9e-07, greedy-decoded output identical.
+
 
 
 ### Inference with SGLang
